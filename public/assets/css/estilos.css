@@ -1,0 +1,115 @@
+body {
+  color: #003F85;
+}
+a {
+  color: #003F85;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: italic;
+font-weight: 500;
+line-height: 1.1;
+color: inherit;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #003F85;
+  border-color: #003F85;
+}
+.btn-primary:hover {
+  color: #003F85;
+  background-color: #FEE000;
+  border-color: #fee000;
+}
+.dropdown-menu {
+  position: relative;
+  top: 0%;
+  z-index: 1000;
+  display: none;
+  float: right;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+
+
+/*nav*/
+.navbar-default {
+background-color: #003F85;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #003F85;
+    background-color: #FEE000;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #003F85;
+  background-color: #FEE000
+}
+.navbar-default .navbar-nav > li > a {
+color: #FFF;
+}
+.glyphicon {
+  color: #FFF;
+  top: 5px;
+}
+.form-control{
+  border-radius: 40px;
+}
+.center {
+margin-left: 20.666667%;
+}
+.noborder{
+  margin-bottom: 0px;
+}
+.navbar-form .form-control {
+width: 150px;
+}
+/*fin nav*/
+
+
+/*jumbotron*/
+.jumbotron {
+  background-image: url("../imagenes/jumbotron.png");
+  margin-bottom: 0px;
+  padding-top: 149px;
+  background-size: 100% 100%;
+
+}
+.unput-jumbotron{
+  width: 133px;
+  margin-top: 7px;
+}
+/*fin jumbotron*/
+
+/*carrucel*/
+.carrucel {
+width: 70%;
+margin-bottom: 58px;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+display: block;
+max-width: 100%;
+height: 350px;
+width: 100%;
+}
