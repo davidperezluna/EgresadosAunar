@@ -17,11 +17,12 @@
                 <div class="col-md-9">
                     <input type="password" class="form-control" name="password">
                 </div>
+                
             </div>
 
             <div class="form-group">
                 <div class="col-md-7 col-md-offset-5">
-                    <button type="submit" class="btn btn-primary btn-group-sm">Login</button>
+                    <button type="submit" class="btn btn-primary btn-group-sm">inciar secion</button>
                 </div>
             </div>
         </form>

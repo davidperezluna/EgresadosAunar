@@ -1,5 +1,5 @@
 @extends('layouts.principal')
 @section('content')
 
-    <h1>quienes somos?</h1>
-    @endsection
+    <h1>servicios?</h1>
+@endsection

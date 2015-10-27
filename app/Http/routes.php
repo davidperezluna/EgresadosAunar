@@ -15,10 +15,12 @@ Route::get('/',[
     'uses'=> 'homeController@index',
     'as'=> 'home'
 ]);
+
 Route::get('quien',[
     'uses'=> 'homeController@quien',
     'as'=> 'quien'
 ]);
+
 // Authentication routes...
 Route::get('login', [
     'uses'=>'Auth\AuthController@getLogin',
@@ -50,4 +52,25 @@ Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
 
 //Route::get('home', 'homeController@home');
+
+Route::group(['middleware'=>'auth'],function(){
+
+
+    Route::get('servicios',[
+        'uses'=> 'homeController@servicios',
+        'as'=> 'servicios'
+    ]);
+    Route::get('empresa',[
+        'uses'=> 'homeController@empresa',
+        'as'=> 'empresa'
+    ]);Route::get('bolsa',[
+        'uses'=> 'homeController@bolsa',
+        'as'=> 'bolsa'
+    ]);
+});
+
+
+
+
+
 

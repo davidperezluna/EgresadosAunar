@@ -14,12 +14,22 @@
             <div class="row container-fluid">
                 <div class="col-md-9">
                     <ul class="nav navbar-nav">
+
+
+
+                        @if(Auth::guest())
                         <li><a href="{{route('home') }}">INICIO</a></li>
                         <li><a href="{{route('quien') }}">QUIENES SOMOS</a></li>
-                            <li><a href="">SERVICIOS</a></li>
-                            <li><a href="">EMPRESA</a></li>
-                            <li><a href="">BOLSA DE EPLEOS</a></li>
-
+                        <li><a href="" data-toggle="modal" data-target="#myModal">SERVICIOS</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal">EMPRESA</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal">BOLSA DE EPLEOS</a></li>
+                            @else
+                            <li><a href="{{route('home') }}">INICIO</a></li>
+                            <li><a href="{{route('quien') }}">QUIENES SOMOS</a></li>
+                            <li><a href="{{route('servicios')}}" >SERVICIOS</a></li>
+                            <li><a href="{{route('empresa') }}" >EMPRESA</a></li>
+                            <li><a href="{{route('bolsa') }}" >BOLSA DE EPLEOS</a></li>
+                        @endif
 
                     </ul>
                 </div>
