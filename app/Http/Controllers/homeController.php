@@ -18,6 +18,18 @@ class homeController extends Controller
     {
         return view('home');
     }
+    public function servicios()
+    {
+        return view('servicios');
+    }
+    public function empresa()
+    {
+        return view('empresa');
+    }
+    public function bolsa()
+    {
+        return view('bolsa');
+    }
     public function quien()
     {
 
